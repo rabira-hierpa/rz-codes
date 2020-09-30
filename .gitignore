@@ -71,7 +71,7 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
-.cpanel.yml
+
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
