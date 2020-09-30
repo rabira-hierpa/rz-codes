@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/rzcodesc/repositories/rz-codes
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R rz-codes/* $DEPLOYPATH
