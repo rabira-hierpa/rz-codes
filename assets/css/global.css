@@ -1,3 +1,85 @@
+/* Import globasl and partial css files */
+@import url(./partials/_variables.css);
 .bg-color {
 	background-color: #3a3335;
 }
+/* Buttons */
+
+.button {
+	padding: 0.8rem 2.2rem;
+	font: normal 500 16px/20px var(--ubuntuMono);
+	position: relative;
+	border: 3px solid transparent;
+	border-radius: 4px;
+}
+
+.button.primary-button {
+	background: var(--gradient-color);
+	background-clip: padding-box;
+	color: whitesmoke;
+	transition: backgroudn 1s ease;
+	box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+	background: whitesmoke;
+	background-clip: padding-box;
+	color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	bottom: -2px;
+	right: -2px;
+	background: var(--gradient-color);
+	content: '';
+	z-index: -1;
+	border-radius: 4px;
+}
+
+.button.secondary-button {
+	background: white;
+	background-clip: padding-box;
+	transition: background 0.6s ease;
+}
+
+.button.secondary-button:hover {
+	background: var(--gradient-color);
+	color: whitesmoke;
+	box-shadow: var(--box-shadow);
+}
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+	outline: 0px !important;
+	box-shadow: 0 !important;
+}
+/* Project Area  */
+
+.project-area .button-group button {
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+}
+
+.project-area .button-group button + button {
+	padding-left: 3rem;
+}
+
+.project-area .grid .our-projects .img a:hover {
+	filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.grid-item {
+	width: 25%;
+}
+.grid-item--width2 {
+	width: 20%;
+}
+
+/* End Project Area  */
