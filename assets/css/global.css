@@ -82,4 +82,36 @@ button:hover,
 	width: 20%;
 }
 
+.project-card {
+}
+.project-img:hover {
+	filter: brightness(1.05) drop-shadow(1px 8px 30px #929292);
+	cursor: pointer;
+}
+.project-card:hover {
+	/*  */
+	border: 1px solid rgb(255, 247, 247);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-desc {
+	clear: both;
+}
+
 /* End Project Area  */
+/* Slick Carousel */
+.items {
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 100px;
+}
+
+.slick-slide {
+	margin: 10px;
+}
+
+.slick-slide img {
+	width: 100%;
+	border: 0px solid #fff;
+}
+/* End of Slick carosel */
