@@ -1,4 +1,14 @@
 $(document).ready(function () {
+	$('.items').slick({
+		dots: true,
+		infinite: true,
+		lazyLoad: 'ondemand',
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
 	let $btns = $('.project-area .button-group button');
 	$btns.click(function (e) {
 		$('.project-area .button-group buttons').removeClass('active');
