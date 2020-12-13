@@ -115,3 +115,12 @@ button:hover,
 	border: 0px solid #fff;
 }
 /* End of Slick carosel */
+
+.header {
+	/* background-color: #585858 !important; */
+}
+
+.main-logo{
+	width: 50px;
+	height: 50px;
+}
