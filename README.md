@@ -1,5 +1,5 @@
 # Rz-codes
-The repo for my person site (http://rz-codes.com)
+The repo for my personal site (http://rz-codes.com)
 
 ## Preview
 
