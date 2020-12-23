@@ -12,12 +12,16 @@ const useStyles = makeStyles((Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
+			backgroundColor: '#e3b505 !important',
 		},
 		menuButton: {
 			marginRight: Theme.spacing(2),
 		},
 		title: {
 			flexGrow: 1,
+		},
+		navBrand: {
+			backgroundColor: '#da4f49',
 		},
 	})
 );
@@ -27,7 +31,7 @@ export default function ButtonAppBar() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position='static' color='secondary'>
+			<AppBar position='static' className={classes.navBrand}>
 				<Toolbar>
 					<IconButton
 						edge='start'
