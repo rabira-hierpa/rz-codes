@@ -1,31 +1,29 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: path.resolve(__dirname, './src/index.js'),
 	output: {
-		path: path.join(__dirname, '/bundle'),
-		filename: 'index_bundle.js',
-	},
-	devServer: {
-		inline: true,
-		port: 8001,
+		path: path.resolve(__dirname, './public'),
+		filename: 'bundle.js',
 	},
 	module: {
 		rules: [
 			{
-				test: /\.jsx?$/,
+				test: /\.(tsx|js|jsx)$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
-				// query: {
-				// 	presets: ['es2015', 'react'],
-				// },
 			},
 		],
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: './index.html',
-		}),
-	],
+	resolve: {
+		extensions: ['*', '.tsx', '.js', '.jsx'],
+	},
+	devServer: {
+		contentBase: path.resolve(__dirname, './public'),
+		inline: true,
+		port: 8001,
+		hot: true,
+	},
+	plugins: [new webpack.HotModuleReplacementPlugin()],
 };
