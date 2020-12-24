@@ -4,7 +4,8 @@
 	background-color: #3a3335;
 }
 .body {
-	margin: 0;
+	/* margin: 0; */
+	font-family: 'Source Code Pro', 'Roboto', sans-serif, monospace;
 }
 /* Buttons */
 
@@ -85,8 +86,6 @@ button:hover,
 	width: 20%;
 }
 
-.project-card {
-}
 .project-img:hover {
 	filter: brightness(1.05) drop-shadow(1px 8px 30px #929292);
 	cursor: pointer;
@@ -118,10 +117,6 @@ button:hover,
 	border: 0px solid #fff;
 }
 /* End of Slick carosel */
-
-.header {
-	/* background-color: #585858 !important; */
-}
 
 .main-logo {
 	width: 75px;
