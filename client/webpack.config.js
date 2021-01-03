@@ -17,12 +17,14 @@ module.exports = {
 		],
 	},
 	resolve: {
-		extensions: ['*', '.tsx', '.js', '.jsx'],
+		extensions: ['*', '.ts', '.tsx', '.js', '.jsx'],
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, './public'),
 		inline: true,
+		host: '10.4.17.37',
 		port: 8001,
+		disableHostCheck: true,
 		hot: true,
 	},
 	plugins: [new webpack.HotModuleReplacementPlugin()],
